@@ -1,0 +1,28 @@
+@import "variables";
+
+html {
+	font-size: 18px;
+	@include sans;
+	color: $colBaseText;
+	line-height: 120%;
+}
+
+input {
+	@include sans();
+	@include placeholderColor($colTextGrey3)
+}
+
+select {
+	@include sans();
+	@include placeholderColor($colTextGrey3);
+	&:invalid {
+		color: $colTextGrey3;
+	}	
+
+	&.empty { color: $colTextGrey3; }
+}
+
+textarea {
+	@include sans();
+	@include placeholderColor($colTextGrey3)
+}
