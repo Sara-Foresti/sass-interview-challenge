@@ -1,3 +1,46 @@
 @import "grid/landing-page-grid";
 @import "variables";
 @import "typography";
+
+.message-img {
+  width: 100%;
+}
+
+.inner-form-wrapper {
+  border-top: 1px solid $colTextGrey2;
+  padding-top: 52px;
+  p {
+    padding: 10px 0;
+    font-weight: bold;
+  };
+}
+
+.validation-msg-error {
+  color:$warnColor;
+}
+
+.form-intro-copy {
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 32px;
+}
+
+.submit-button {
+  color: white;
+  background: $accentColor;
+  padding: 10px 20px;
+}
+
+.warn {
+  color: $warnColor;
+}
+
+.text-smaller {
+  font-size: 14px;
+}
+
+footer {
+  border-bottom: 10px solid black;
+  margin: 0 42px 30px 42px;
+  padding-top: 70px;
+}
