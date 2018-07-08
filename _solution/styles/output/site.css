@@ -2005,6 +2005,22 @@ textarea:-moz-placeholder {
   color: #a9a8a8;
 }
 
+/*
+	mobile-sm
+	mobile-sm-max
+	mobile-med
+	mobile-med-max
+	mobile-lrg
+	mobile-lrg-max
+	tablet-sm
+	tablet-sm-max
+	tablet-lrg
+	tablet-lrg-max
+	desktop-sm
+	desktop-sm-max
+	desktop-lrg
+	desktop-lrg-max
+*/
 .logo-wrapper {
   text-align: center;
   padding: 47px 0 26px 0;
@@ -2086,22 +2102,6 @@ textarea:-moz-placeholder {
   padding-top: 52px;
 }
 
-.left-side {
-  font-size: 18px;
-  font-weight: 600;
-  opacity: 0.9;
-  float: left;
-}
-
-input.right-side {
-  padding: 8px 3px;
-  font-size: 16px;
-  font-weight: bold;
-  border: 1px solid #666b6e;
-  width: 60%;
-  float: right;
-}
-
 select.empty {
   border: none;
   padding: 8px 3px;
@@ -2119,13 +2119,25 @@ select.empty {
   width: 100%;
 }
 
-.select-inner-wrapper {
-  padding: 8px 3px;
-  font-size: 16px;
-  font-weight: bold;
-  border: 1px solid #666b6e;
-  width: 60%;
-  float: right;
+@media only screen and (min-width: 320px) {
+  .select-inner-wrapper {
+    padding: 1px 3px;
+    font-size: 16px;
+    font-weight: bold;
+    border: 1px solid #666b6e;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .select-inner-wrapper {
+    padding: 8px 3px;
+    font-size: 16px;
+    font-weight: bold;
+    border: 1px solid #666b6e;
+    width: 60%;
+    float: right;
+  }
 }
 
 .checkbox-wrapper {
@@ -2135,36 +2147,109 @@ select.empty {
   float: right;
   width: 100%;
   padding-bottom: 72px;
+  height: 20px;
 }
 
 #termsAndConditions {
   border: none;
 }
 
-.validation-msg-error {
-  color: #990000;
-  width: 60%;
-  position: absolute;
-  bottom: 2px;
-  /* float: right; */
-  left: 40%;
+@media only screen and (min-width: 320px) {
+  .validation-msg-error {
+    color: #990000;
+    position: absolute;
+    width: 100%;
+    top: 55px;
+    left: 0;
+  }
 }
 
-.right-side {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  width: 60%;
-  float: right;
-  position: absolute;
-  top: 0;
-  left: 40%;
+@media only screen and (min-width: 768px) {
+  .validation-msg-error {
+    color: #990000;
+    width: 60%;
+    position: absolute;
+    bottom: 2px;
+    left: 40%;
+  }
 }
 
-.field-wrapper, .field-group {
-  position: relative;
-  height: 80px;
-  margin: 5px auto 20px auto;
+@media only screen and (min-width: 320px) {
+  input.right-side {
+    position: absolute;
+    width: 100%;
+    top: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    border: 1px solid #666b6e;
+    padding: 8px 3px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  input.right-side {
+    padding: 8px 3px;
+    font-size: 16px;
+    font-weight: bold;
+    border: 1px solid #666b6e;
+    width: 60%;
+    float: right;
+  }
+}
+
+@media only screen and (min-width: 320px) {
+  .left-side {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: bold;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .left-side {
+    font-size: 18px;
+    font-weight: 600;
+    opacity: 0.9;
+    float: left;
+  }
+}
+
+@media only screen and (min-width: 320px) {
+  .right-side {
+    position: absolute;
+    width: 100%;
+    top: 25px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .right-side {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 60%;
+    float: right;
+    position: absolute;
+    top: 0;
+    left: 40%;
+  }
+}
+
+@media only screen and (min-width: 320px) {
+  .field-wrapper, .field-group {
+    position: relative;
+    height: 80px;
+    margin: 30px auto;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .field-wrapper, .field-group {
+    position: relative;
+    height: 80px;
+    margin: 5px auto 20px auto;
+  }
 }
 
 .submit-button {
