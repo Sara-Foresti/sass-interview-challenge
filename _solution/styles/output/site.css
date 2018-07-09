@@ -2140,16 +2140,6 @@ select.empty {
   }
 }
 
-.checkbox-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  float: right;
-  width: 100%;
-  padding-bottom: 72px;
-  height: 20px;
-}
-
 #termsAndConditions {
   border: none;
 }
@@ -2169,7 +2159,7 @@ select.empty {
     color: #990000;
     width: 60%;
     position: absolute;
-    bottom: 2px;
+    top: 35px;
     left: 40%;
   }
 }
@@ -2194,6 +2184,8 @@ select.empty {
     border: 1px solid #666b6e;
     width: 60%;
     float: right;
+    position: absolute;
+    top: 0;
   }
 }
 
@@ -2239,7 +2231,7 @@ select.empty {
 @media only screen and (min-width: 320px) {
   .field-wrapper, .field-group {
     position: relative;
-    height: 80px;
+    height: 100px;
     margin: 30px auto;
   }
 }
@@ -2270,6 +2262,45 @@ select.empty {
   padding: 10px 0;
   font-weight: bold;
   line-height: 22px;
+}
+
+@media only screen and (min-width: 320px) {
+  .field-group > .right-side {
+    position: absolute;
+    top: 0;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .field-group > .right-side {
+    position: absolute;
+    top: 0;
+  }
+}
+
+@media only screen and (min-width: 320px) {
+  .checkbox-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0;
+    height: 22px;
+    margin: 0;
+    top: 28px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .checkbox-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    float: right;
+    width: 100%;
+    padding-bottom: 72px;
+    height: 20px;
+  }
 }
 
 footer {
